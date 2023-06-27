@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/styleNavBar.css">
+    <link rel="stylesheet" href="styling/stylesignup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- <link rel="stylesheet" href="styling/stylehome.css"> -->
+    <link rel="stylesheet" href="styling/stylefooter.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="navbar__links">
+      <li><a href="store.html">Store</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
+  
+
+    <nav>
+        <ul class="menu">
+          <li class="logo"><a href="home.html"><img src="images/pic222-2-removebg-preview.png" width="200"></a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="brotherhood.php">Brotherhood</a></li>
+            </li>
+            <li class="item button"><a href="login.html">Log In</a></li>
+            <li class="item button secondary"><a href="signup.html">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+      <h2 class="header">Sign Up</h2>
+      <form action="process.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="graduation-year">Graduation Year</label>
+          <input type="number" id="graduation-year" name="graduation-year" placeholder="Enter your graduation year" min="1950" required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Enter your city" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" placeholder="Enter your state" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Enter your company" required>
+        </div>
+        <div class="form-group">
+          <label for="position">Position</label>
+          <input type="text" id="position" name="position" placeholder="Enter your position" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Phi Gamma Delta's Michigan Chapter</p>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+</body>
+
+
+
+</html>

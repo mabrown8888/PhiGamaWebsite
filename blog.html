@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/styleNavBar.css">
+    <link rel="stylesheet" href="styling/styleblog.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- <link rel="stylesheet" href="styling/stylehome.css"> -->
+    <link rel="stylesheet" href="styling/stylefooter.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar__links">
+      <li><a href="store.html">Store</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
+  
+    <nav>
+        <ul class="menu">
+          <li class="logo"><a href="home.html"><img src="images/pic222-2-removebg-preview.png" width="200"></a></li>
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="brotherhood.php">Brotherhood</a></li>
+            </li>
+            <li class="item button"><a href="login.html">Log In</a></li>
+            <li class="item button secondary"><a href="signup.html">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    
+    <header>
+          <h1 class="blogheader">Our Blog</h1>
+        </header>
+        
+        <main>
+        <div class="article-container" style="background-color:rgb(255, 255, 255)">
+            <img src="images/Crest-Color-CMYK.jpg" alt="Article image">
+            <h2>Post Title</h2>
+            <p>Here is the content of the post.</p>
+            <p>Here is some more content of the post.</p>
+            <p>Here is even more content of the post.</p>
+            <div class="tags">
+              <span>Tag 1</span>
+              <span>Tag 2</span>
+              <span>Tag 3</span>
+            </div>
+            <div style="float: right"><p>01/01/2001</p></div>
+        </div>
+          
+        <div class="article-container" style="background-color:rgb(255, 255, 255)">
+            <img src="images/Crest-Color-CMYK.jpg" alt="Article image">
+            <h2>Post Title</h2>
+            <p>Here is the content of the post.</p>
+            <p>Here is some more content of the post.</p>
+            <p>Here is even more content of the post.</p>
+            <div class="tags">
+              <span>Tag 1</span>
+              <span>Tag 2</span>
+              <span>Tag 3</span>
+            </div>
+            <div style="float: right"><p>01/01/2001</p></div>
+        </div>
+        </main>
+</body>
+
+  
+
+    <footer>
+        <p>&copy; 2023 Phi Gamma Delta's Michigan Chapter</p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+  
+</html>

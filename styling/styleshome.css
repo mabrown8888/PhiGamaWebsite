@@ -1,0 +1,288 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: #00274C;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+nav {
+  background: #762bbd;
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+.logo a,
+.toggle a {
+  font-size: 200px;
+}
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.toggle {
+  cursor:pointer;
+}
+.bars {
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+.bars:before,
+.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+  top: -5px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 468px) {
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button.secondary {
+      border: 0;
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: rgb(0, 12, 12);
+      border: 1px #949e9e;
+      border-radius:50em;
+  }
+  /* .button.secondary a {
+      background: transparent;    
+  } */
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button a:hover {
+      background: #8d9191;
+      border-color: #011414;
+  }
+  /* .button.secondary a:hover {
+      color: #762bbd;
+  }  */
+}
+
+/* Desktop menu */
+@media all and (min-width: 768px) {
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+  }
+  .item {
+      order: 1;
+  }
+  .button {
+      order: 2;
+  }
+  .menu li {
+      padding: 15px 10px;
+  }
+  .menu li.button {
+      padding-right: 0;
+  }
+}
+
+.slideshow {
+  margin-top: 20px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slide 40s infinite;
+  
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  15% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-200%);
+  }
+  25% {
+    transform: translateX(-200%);
+  }
+  30% {
+    transform: translateX(-300%);
+  }
+  35% {
+    transform: translateX(-300%);
+  }
+  40% {
+    transform: translateX(-400%);
+  }
+  45% {
+    transform: translateX(-400%);
+  }
+  50% {
+    transform: translateX(-500%);
+  }
+  55% {
+    transform: translateX(-500%);
+  }
+  60% {
+    transform: translateX(-600%);
+  }
+  65% {
+    transform: translateX(-600%);
+  }
+  70% {
+    transform: translateX(-700%);
+  }
+  75% {
+    transform: translateX(-700%);
+  }
+  80% {
+    transform: translateX(-800%);
+  }
+  85% {
+    transform: translateX(-800%);
+  }
+  90% {
+    transform: translateX(-900%);
+  }
+  95% {
+    transform: translateX(-900%);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}
+
+main {
+  background-color: #00274C;
+}
+
+.logo-container {
+  margin-top: 10%;
+}
+
+.logo1 {
+  float: left;
+  /* width: 20%; */
+  height: 20%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.logo2 {
+  float: right;
+  /* width: 20%; */
+  height: 30%;
+  margin-right: 7%;
+}
+
+.text-box {
+  width: 50%;
+  font-size: larger;
+  margin: 0 auto;
+  text-align: justify;
+  color: #FFCB05;
+}
+
+.text-box h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}

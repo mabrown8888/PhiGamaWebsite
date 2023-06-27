@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling/styleNavBar.css">
+    <link rel="stylesheet" href="styling/styleabout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <!-- <link rel="stylesheet" href="styling/stylehome.css"> -->
+    <link rel="stylesheet" href="styling/stylefooter.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar__links">
+          <li><a href="store.html">Store</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+      
+        <nav>
+            <ul class="menu">
+              <li class="logo"><a href="home.html"><img src="images/pic222-2-removebg-preview.png" width="200"></a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="brotherhood.php">Brotherhood</a></li>
+                </li>
+                <li class="item button"><a href="login.html">Log In</a></li>
+                <li class="item button secondary"><a href="signup.html">Sign Up</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+        </nav>
+    
+    <h1 class="header">About Phi Gamma Delta's Michigan Chapter</h1>
+    <img src="images/Crest-Color-CMYK Background Removed.png" class="sideImage" style="float: left">
+    <img src="images/Crest-Color-CMYK Background Removed.png" class="sideImage" style="float: right">
+    <main>
+        <section class="section-block">
+            <h2>Our History</h2>
+            <p>Phi Gamma Delta was founded in 1848 at Jefferson College in Canonsburg, Pennsylvania. Our chapter at the University of Michigan, Zeta Deuteron, was established in 1875 and has a long tradition of excellence in scholarship, leadership, and community service.</p>
+            <p>Our mission is to promote lifelong friendships, reaffirm high ethical standards and values, and foster personal development in the pursuit of excellence.</p>
+        </section>
+        
+        <section class="section-block">
+            <h2>Our Philanthropy</h2>
+            <p>Phi Gamma Delta at the University of Michigan is committed to giving back to our community. Our philanthropic efforts include supporting the C.S. Mott Children's Hospital, the American Cancer Society, and the UM Depression Center.</p>
+            <p>Each year, our chapter holds fundraisers and volunteer events to support these causes and make a positive impact in our community.</p>
+        </section>
+        
+        <section class="section-block">
+            <h2>Joining Phi Gamma Delta</h2>
+            <p>If you are interested in joining Phi Gamma Delta at the University of Michigan, please visit our <a href="events.html" style="color:rgb(34, 153, 217)">events page</a> to meet some of the current brothers. We welcome men of all backgrounds who share our values of friendship, morality, and service.</p>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Phi Gamma Delta's Michigan Chapter</p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
+</body>
+
+</html>
